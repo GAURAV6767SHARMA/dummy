@@ -1,0 +1,1002 @@
+{
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/GAURAV6767SHARMA/dummy/blob/main/python%20imp\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "CMMMDhK0pQZC"
+      },
+      "source": [
+        "wap to assign marks of three subjects and caluculate total and avg and display them ?\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Lo-BDbx4pSYV",
+        "outputId": "e87d459e-78dd-4d17-e6b8-e8cb679a6bca"
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "enter a marks:67\n",
+            "enter a marks:88\n",
+            "enter a marks:90\n",
+            "total: 245.0\n",
+            "avg: 81.66666666666667\n"
+          ]
+        }
+      ],
+      "source": [
+        "M = float(input(\"enter a marks:\"))\n",
+        "E = float(input(\"enter a marks:\"))\n",
+        "P = float(input(\"enter a marks:\"))\n",
+        "total = M+E+P\n",
+        "avg = total/3\n",
+        "print(\"total:\",total)\n",
+        "print(\"avg:\",avg)\n",
+        "\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "wnDohij8ta83",
+        "outputId": "aaa758ae-7f31-45ac-946a-d1396f99cdd7"
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "enter the number :70\n",
+            "these are the factors 1\n",
+            "these are the factors 2\n",
+            "these are the factors 5\n",
+            "these are the factors 7\n",
+            "these are the factors 10\n",
+            "these are the factors 14\n",
+            "these are the factors 35\n",
+            "these are the factors 70\n"
+          ]
+        }
+      ],
+      "source": [
+        "n = int(input(\"enter the number :\"))\n",
+        "for i in range(1,n+1):\n",
+        "  if n % i == 0:\n",
+        "    print(\"these are the factors\" , i)"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "WEYZ4giep-m7"
+      },
+      "source": [
+        "wap to accept rate and quantity of an object from shopkeeper and calculkate total price of item?\n",
+        "*\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "GjufaSix0JTx",
+        "outputId": "f058488e-1fb8-434d-fffb-2b7a94386cab"
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "enter a rate:89\n",
+            "enter a quantity:3\n",
+            "total: 267\n"
+          ]
+        }
+      ],
+      "source": [
+        "rate = int(input(\"enter a rate:\"))\n",
+        "quantity = int(input(\"enter a quantity:\"))\n",
+        "total = rate*quantity\n",
+        "print(\"total:\",total)"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "9NZcG88H0ghk"
+      },
+      "source": [
+        "wap to accept age from the user and check they are eligible for vote or not ?"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "CTpJKdbK0kGt",
+        "outputId": "5eb1a65f-54de-4037-8ef6-c05fc7b0f693"
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "enter the age:78\n",
+            "eligible for vote\n"
+          ]
+        }
+      ],
+      "source": [
+        "age = int(input(\"enter the age:\"))\n",
+        "if age>18:\n",
+        "  print(\"eligible for vote\")\n",
+        "else:\n",
+        "  print(\"not eligible for vote\")"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "b74J2FXE0zKj"
+      },
+      "source": [
+        "write a program to accept monthly salary from the user and check the user is eligible for tax or bnot\n",
+        "annual salary mush be more than 12 lakhs\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "RFss6S1g1L4B",
+        "outputId": "637bd22c-cc76-4845-9a72-f426effd0207"
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "enter the salary:12458\n",
+            "not eligible for tax\n"
+          ]
+        }
+      ],
+      "source": [
+        "salary = int(input(\"enter the salary:\"))\n",
+        "if salary>=1200000:\n",
+        "  print(\"eligible for tax\")\n",
+        "else:\n",
+        "  print(\"not eligible for tax\")"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "3NEyEFpr2BX1"
+      },
+      "source": [
+        "write a program to check wheather string is palindrome or not?"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "N9dGU3lt2DFW",
+        "outputId": "65134e3d-3f60-4f94-f739-58b7a4568124"
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "enter a string:nitin\n",
+            "palindrome\n"
+          ]
+        }
+      ],
+      "source": [
+        "str = input(\"enter a string:\")\n",
+        "if str == str[::-1]:\n",
+        "  print(\"palindrome\")\n",
+        "else:\n",
+        "  print(\"not palindrome\")"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "zW_lc_Do23jE"
+      },
+      "source": [
+        "write a program to print no from 1 to 20?\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "DgiztykJ26ZV",
+        "outputId": "96eddd50-b98c-4f19-b0a8-89d3542a642f"
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "1\n",
+            "2\n",
+            "3\n",
+            "4\n",
+            "5\n",
+            "6\n",
+            "7\n",
+            "8\n",
+            "9\n",
+            "10\n",
+            "11\n",
+            "12\n",
+            "13\n",
+            "14\n",
+            "15\n",
+            "16\n",
+            "17\n",
+            "18\n",
+            "19\n",
+            "20\n"
+          ]
+        }
+      ],
+      "source": [
+        "for i in range(1,21):\n",
+        "  print(i)"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "F-OdD1Nq3A8V"
+      },
+      "source": [
+        "Calculate Electricity Bill\n",
+        "Write a program to calculate an electricity bill:\n",
+        "•\tUp to 100 units → ₹5/unit\n",
+        "•\t101–200 units → ₹7/unit\n",
+        "•\tAbove 200 units → ₹10/unit\n",
+        "•\tCalculate and display the total bill."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "oatJguw43N4u",
+        "outputId": "06d1af36-b848-48e8-8e68-3b9b80af4e58"
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "enter the units:100\n",
+            "total bill: 500\n"
+          ]
+        }
+      ],
+      "source": [
+        "units = int(input(\"enter the units:\"))\n",
+        "if units>=100:\n",
+        "  bill = units*5\n",
+        "elif units>=101 and units<=200:\n",
+        "  bill = units*7\n",
+        "else:\n",
+        "  bill = units*10\n",
+        "print(\"total bill:\",bill)\n"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "O-Y388Fy4fUP"
+      },
+      "source": [
+        "8)Using for loop:\n",
+        "to print all factors of a number\n",
+        "To check the number is prime or composite\n",
+        "to count the number of vowels\n",
+        "To print the table of a number\n",
+        "\n",
+        "\n",
+        "\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "oUzmFjyt6JSV",
+        "outputId": "9e890275-b458-4b75-ef60-6ef8094a5d5b"
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "Enter a number: 70\n",
+            "1\n",
+            "2\n",
+            "5\n",
+            "7\n",
+            "10\n",
+            "14\n",
+            "35\n",
+            "70\n"
+          ]
+        }
+      ],
+      "source": [
+        "#print factor of a number\n",
+        "n = int(input(\"Enter a number: \"))\n",
+        "\n",
+        "for i in range(1, n + 1):\n",
+        "    if n % i == 0:\n",
+        "        print(i)\n"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "bMqKzCk37QdI"
+      },
+      "source": [
+        " To check the number is prime or composite"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "BRLcb_eQ7XHR"
+      },
+      "outputs": [],
+      "source": [
+        "n = int(input(\"Enter number: \"))\n",
+        "\n",
+        "if n <= 1:\n",
+        "    print(\"Neither prime nor composite\")\n",
+        "else:\n",
+        "    for i in range(2, n):\n",
+        "        if n % i == 0:\n",
+        "            print(\"Composite\")\n",
+        "            break\n",
+        "    else:\n",
+        "        print(\"Prime\")"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "CI5ilIuCfVpa"
+      },
+      "source": [
+        "print total number of vowels in a string?\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "7Ll2WqvzfeyS",
+        "outputId": "881b14dc-78be-4c5d-f2a4-4b4bf81bc41c"
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "Enter a string: hAckerA\n",
+            "Total vowels = 3\n"
+          ]
+        }
+      ],
+      "source": [
+        "s = input(\"Enter a string: \")\n",
+        "count = 0\n",
+        "\n",
+        "for i in s:\n",
+        "    if i in \"aeiouAEIOU\":\n",
+        "        count += 1\n",
+        "\n",
+        "print(\"Total vowels =\", count)"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "3hh1Bm90gvy-"
+      },
+      "source": [
+        "write a factorial code using for and while loop?"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Susz9g8eg3pu",
+        "outputId": "942f358a-234a-4906-ef71-d827317ecad2"
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "Enter a number: 6\n",
+            "Factorial = 720\n"
+          ]
+        }
+      ],
+      "source": [
+        "n = int(input(\"Enter a number: \"))\n",
+        "fact = 1\n",
+        "\n",
+        "for i in range(1, n + 1):\n",
+        "    fact = fact * i\n",
+        "\n",
+        "print(\"Factorial =\", fact)"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Myqh2K0vhNmX",
+        "outputId": "f10a3380-4e7e-4544-f656-5daba8012fc1"
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "Enter a number: 5\n",
+            "Factorial = 120\n"
+          ]
+        }
+      ],
+      "source": [
+        "n = int(input(\"Enter a number: \"))\n",
+        "fact = 1\n",
+        "i = 1\n",
+        "\n",
+        "while i <= n:\n",
+        "    fact = fact * i\n",
+        "    i = i + 1\n",
+        "\n",
+        "print(\"Factorial =\", fact)"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "BY9cDNcEiQMA"
+      },
+      "source": [
+        "wap to print palindrom for a integer value ?"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "At_F9S3QiV38",
+        "outputId": "82cd8da6-2cf1-443d-e392-5c8bd6727bfe"
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "Enter number: 12121\n",
+            "Reverse = 12121\n",
+            "Palindrome\n"
+          ]
+        }
+      ],
+      "source": [
+        "n = int(input(\"Enter number: \"))\n",
+        "temp = n\n",
+        "rev = 0\n",
+        "\n",
+        "while n > 0:\n",
+        "    rev = rev * 10 + n % 10\n",
+        "    n = n // 10\n",
+        "\n",
+        "print(\"Reverse =\", rev)\n",
+        "\n",
+        "if temp == rev:\n",
+        "    print(\"Palindrome\")\n",
+        "else:\n",
+        "    print(\"Not Palindrome\")"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "Rsa98bWPjhsh"
+      },
+      "source": [
+        "wap to print fibonacci series using while and for loop\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "5CjBrX9Sji9p",
+        "outputId": "d92c130e-df7d-43f1-f241-01a0f49fd8f0"
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "Enter terms: 7\n",
+            "0 1 1 2 3 5 8 "
+          ]
+        }
+      ],
+      "source": [
+        "n = int(input(\"Enter terms: \"))\n",
+        "a, b = 0, 1\n",
+        "\n",
+        "for i in range(n):\n",
+        "    print(a, end=\" \")\n",
+        "    a, b = b, a + b"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "8HGLQiyFkDvD"
+      },
+      "source": [
+        "wap to print fibonacci series using while loop?"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "bLk4oPjhkS2x"
+      },
+      "outputs": [],
+      "source": [
+        "n = int(input(\"Enter terms: \"))\n",
+        "a, b = 0, 1\n",
+        "i = 0\n",
+        "\n",
+        "while i < n:\n",
+        "    print(a, end=\" \")\n",
+        "    a, b = b, a + b\n",
+        "    i += 1"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "nZUUlbu6kY0q"
+      },
+      "source": [
+        "print tables of any number ?"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "fEpT8wY0keWo",
+        "outputId": "9663fedd-3c5b-4d52-eb05-4000bb3a9a50"
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "Enter number: 80\n",
+            "80 x 1 = 80\n",
+            "80 x 2 = 160\n",
+            "80 x 3 = 240\n",
+            "80 x 4 = 320\n",
+            "80 x 5 = 400\n",
+            "80 x 6 = 480\n",
+            "80 x 7 = 560\n",
+            "80 x 8 = 640\n",
+            "80 x 9 = 720\n",
+            "80 x 10 = 800\n"
+          ]
+        }
+      ],
+      "source": [
+        "n = int(input(\"Enter number: \"))\n",
+        "\n",
+        "for i in range(1, 11):\n",
+        "    print(n, \"x\", i, \"=\", n * i)"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "MxvdhmpzlUIz"
+      },
+      "source": [
+        "wap to accept alist of no from the user and perform the following operations          \n",
+        "1]find mas() min()                                                                       \n",
+        "2]find the sum() and avg()                                                            \n",
+        "3]sort the list in ascending ad descending order                                   \n",
+        "4]remove duplicate items                                                                           \n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "sFoXYe6mlXJ1",
+        "outputId": "9f2df46a-5a8c-4777-dc21-c8a25744a65e"
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "Enter numbers: 2 2 3 52 543 53\n",
+            "Maximum = 543\n",
+            "Minimum = 2\n",
+            "Sum = 655\n",
+            "Average = 109.16666666666667\n",
+            "Ascending = [2, 2, 3, 52, 53, 543]\n",
+            "Descending = [543, 53, 52, 3, 2, 2]\n",
+            "Without duplicates = [2, 3, 52, 53, 543]\n"
+          ]
+        }
+      ],
+      "source": [
+        "a = list(map(int, input(\"Enter numbers: \").split()))\n",
+        "\n",
+        "print(\"Maximum =\", max(a))\n",
+        "print(\"Minimum =\", min(a))\n",
+        "\n",
+        "print(\"Sum =\", sum(a))\n",
+        "print(\"Average =\", sum(a) / len(a))\n",
+        "\n",
+        "print(\"Ascending =\", sorted(a))\n",
+        "print(\"Descending =\", sorted(a, reverse=True))\n",
+        "\n",
+        "print(\"Without duplicates =\", list(set(a)))"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "49sQrRCFpS03"
+      },
+      "source": [
+        "Write a menu-driven Python program for calculator using functions:\n",
+        "\n",
+        "1. Addition\n",
+        "\n",
+        "2. Subtraction\n",
+        "\n",
+        "3. Multiplication\n",
+        "\n",
+        "4. Division\n",
+        "\n",
+        "5. Modulus\n",
+        "\n",
+        "6. Exit\n",
+        "\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "7YvBE0smpbLZ",
+        "outputId": "0ab17705-fe3a-40fb-f11b-8acf91048e9c"
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "1.Add 2.Subtract 3.Multiply 4.Divide 5.Modulus 6.Exit\n",
+            "Enter choice: 3\n",
+            "Enter first number: 653\n",
+            "Enter second number: 5268539\n",
+            "3440355967\n",
+            "1.Add 2.Subtract 3.Multiply 4.Divide 5.Modulus 6.Exit\n",
+            "Enter choice: 6\n"
+          ]
+        }
+      ],
+      "source": [
+        "def add(a, b):\n",
+        "    return a + b\n",
+        "\n",
+        "def sub(a, b):\n",
+        "    return a - b\n",
+        "\n",
+        "def mul(a, b):\n",
+        "    return a * b\n",
+        "\n",
+        "def div(a, b):\n",
+        "    return a / b\n",
+        "\n",
+        "def mod(a, b):\n",
+        "    return a % b\n",
+        "\n",
+        "while True:\n",
+        "    print(\"1.Add 2.Subtract 3.Multiply 4.Divide 5.Modulus 6.Exit\")\n",
+        "    ch = int(input(\"Enter choice: \"))\n",
+        "\n",
+        "    if ch == 6:\n",
+        "        break\n",
+        "\n",
+        "    a = int(input(\"Enter first number: \"))\n",
+        "    b = int(input(\"Enter second number: \"))\n",
+        "\n",
+        "    if ch == 1:\n",
+        "        print(add(a, b))\n",
+        "    elif ch == 2:\n",
+        "        print(sub(a, b))\n",
+        "    elif ch == 3:\n",
+        "        print(mul(a, b))\n",
+        "    elif ch == 4:\n",
+        "        print(div(a, b))\n",
+        "    elif ch == 5:\n",
+        "        print(mod(a, b))\n",
+        "    else:\n",
+        "        print(\"Invalid choice\")"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "_J3qbLw2qo8m"
+      },
+      "source": [
+        ")Write a menu-driven program using functions:\n",
+        "1. Find Maximum in list\n",
+        "\n",
+        "2. Find Minimum in list\n",
+        "\n",
+        "3. Calculate Sum\n",
+        "\n",
+        "4. Calculate Average\n",
+        "\n",
+        "5. Sort List\n",
+        "\n",
+        "6. Remove Duplicates\n",
+        "\n",
+        "7. Exit\n",
+        "\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "background_save": true,
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "e5tmRgBBquzJ",
+        "outputId": "7986fe8c-a960-45d9-f050-d93c6de13f79"
+      },
+      "outputs": [
+        {
+          "metadata": {
+            "tags": null
+          },
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "\n",
+            "1.Maximum  2.Minimum  3.Sum  4.Average\n",
+            "5.Sort  6.Remove Duplicates  7.Exit\n",
+            "[1, 5, 8, 2, 89, 4, 7, 444]\n",
+            "\n",
+            "1.Maximum  2.Minimum  3.Sum  4.Average\n",
+            "5.Sort  6.Remove Duplicates  7.Exit\n"
+          ]
+        }
+      ],
+      "source": [
+        "def maximum(a):\n",
+        "    return max(a)\n",
+        "\n",
+        "def minimum(a):\n",
+        "    return min(a)\n",
+        "\n",
+        "def total(a):\n",
+        "    return sum(a)\n",
+        "\n",
+        "def average(a):\n",
+        "    return sum(a) / len(a)\n",
+        "\n",
+        "def sorting(a):\n",
+        "    return sorted(a)\n",
+        "\n",
+        "def duplicate(a):\n",
+        "    b = []\n",
+        "    for i in a:\n",
+        "        if i not in b:\n",
+        "            b.append(i)\n",
+        "    return b\n",
+        "\n",
+        "a = list(map(int, input(\"Enter numbers: \").split()))\n",
+        "\n",
+        "while True:\n",
+        "    print(\"\\n1.Maximum  2.Minimum  3.Sum  4.Average\")\n",
+        "    print(\"5.Sort  6.Remove Duplicates  7.Exit\")\n",
+        "    ch = int(input(\"Enter choice: \"))\n",
+        "\n",
+        "    if ch == 1:\n",
+        "        print(maximum(a))\n",
+        "    elif ch == 2:\n",
+        "        print(minimum(a))\n",
+        "    elif ch == 3:\n",
+        "        print(total(a))\n",
+        "    elif ch == 4:\n",
+        "        print(average(a))\n",
+        "    elif ch == 5:\n",
+        "        print(sorting(a))\n",
+        "    elif ch == 6:\n",
+        "        print(duplicate(a))\n",
+        "    elif ch == 7:\n",
+        "        break\n",
+        "    else:\n",
+        "        print(\"Invalid choice\")"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "K6PGiz96swN0"
+      },
+      "source": [
+        "19)Write a menu-driven program using functions for unit conversion with the following choices:\n",
+        "(1) Celsius to Fahrenheit,\n",
+        "\n",
+        "(2) kilometres to miles,\n",
+        "\n",
+        "(3) kilograms to pounds, and\n",
+        "\n",
+        "(4) exit./\n",
+        "\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "MJoBgZD_s1y3"
+      },
+      "outputs": [],
+      "source": [
+        "def celsius(c):\n",
+        "    return (c * 9/5) + 32\n",
+        "\n",
+        "def km(k):\n",
+        "    return k * 0.621\n",
+        "\n",
+        "def kg(w):\n",
+        "    return w * 2.205\n",
+        "\n",
+        "while True:\n",
+        "    print(\"1.Celsius to Fahrenheit\")\n",
+        "    print(\"2.Kilometres to Miles\")\n",
+        "    print(\"3.Kilograms to Pounds\")\n",
+        "    print(\"4.Exit\")\n",
+        "\n",
+        "    ch = int(input(\"Enter choice: \"))\n",
+        "\n",
+        "    if ch == 4:\n",
+        "        break\n",
+        "\n",
+        "    n = float(input(\"Enter value: \"))\n",
+        "\n",
+        "    if ch == 1:\n",
+        "        print(celsius(n))\n",
+        "    elif ch == 2:\n",
+        "        print(km(n))\n",
+        "    elif ch == 3:\n",
+        "        print(kg(n))\n",
+        "    else:\n",
+        "        print(\"Invalid choice\")"
+      ]
+    }
+  ],
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyNlRFj8pJ6OIY1Ji3ypf5SQ",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "display_name": "Python 3",
+      "name": "python3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 0
+}
